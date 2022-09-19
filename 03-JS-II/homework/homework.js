@@ -163,12 +163,12 @@ function esPrimo(numero) {
    return false;
    if (numero <= 3)
    return true;
-   if (numero % 2 == 0 || numero % 3 == 0)
+   if (numero % 2 === 0 || numero % 3 === 0)
    return false;
 
    for (var i = 5; i * i <= numero; i = i + 6)
    {
-      if (numero % i == 0 || numero % (i + 2 ) == 0)
+      if (numero % i === 0 || numero % (i + 2 ) === 0)
       return false;
    }
 
@@ -204,7 +204,8 @@ function tieneTresDigitos(numero){
   //Escribe tu código aquí
   if (numero > 99 && numero < 1000) {
     return true;
-  } return false;
+  } 
+  return false;
 
 }
 
